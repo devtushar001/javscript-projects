@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+  <div class="container">
+    <div class="calculator">
+      <div class="display">
+        <input type="text" class="input-display">
+      </div>
+      <div class="values">
+        <button class="input-values" onclick="runFunction('7')">7</button>
+        <button class="input-values" onclick="runFunction('8')">8</button>
+        <button class="input-values" onclick="runFunction('9')">9</button>
+        <button class="input-values-x" onclick="runFunction('+')">+</button>
+      </div>
+      <div class="values">
+        <button class="input-values" onclick="runFunction('4')">4</button>
+        <button class="input-values" onclick="runFunction('5')">5</button>
+        <button class="input-values" onclick="runFunction('6')">6</button>
+        <button class="input-values-x" onclick="runFunction('-')">-</button>
+      </div>
+      <div class="values">
+        <button class="input-values" onclick="runFunction('1')">1</button>
+        <button class="input-values" onclick="runFunction('2')">2</button>
+        <button class="input-values" onclick="runFunction('3')">3</button>
+        <button class="input-values-x" onclick="runFunction('*')">X</button>
+      </div>
+      <div class="values">
+        <button class="input-values" onclick="runFunction('.')">.</button>
+        <button class="input-values" onclick="runFunction('0')">0</button>
+        <button class="input-values" onclick="runFunction('00')">00</button>
+        <button class="input-values-x" onclick="runFunction('/')">/</button>
+      </div>
+      <div class="result">
+        <button class="input-values" onclick="clearFunction()">C</button>
+        <button class="input-values-x" onclick="calculateFunction()">=</button>
+      </div>
+    </div>
+  </div>
+  <script src="calculator.js"></script>
+</body>
+</html>
